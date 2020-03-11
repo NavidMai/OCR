@@ -10,5 +10,6 @@ Install:
 brew install tesseract (Mac)
 pip3 install pillow
 pip3 install pytesseract
+pip3 install imutils
 pip3 install google-api-python-client
 pip3 install --upgrade oauth2client
