@@ -44,7 +44,7 @@ def main():
 
     imgfile = 'Image/image2.jpg'
 
-    txtfile = 'Data/Result.txt'
+    txtfile = 'Result.txt'
 
     mime = 'application/vnd.google-apps.document'
     res = service.files().create(
@@ -64,6 +64,10 @@ def main():
         status, done = downloader.next_chunk()
 
     service.files().delete(fileId=res['id']).execute()
+
+    f = open(txtfile, "r")
+    print(f.read())
+    os.remove(txtfile)
 
 
 if __name__ == '__main__':
