@@ -45,7 +45,6 @@ def main():
     imgfile = 'Image/image2.jpg'
 
     txtfile = 'Result.txt'
-
     mime = 'application/vnd.google-apps.document'
     res = service.files().create(
         body={
