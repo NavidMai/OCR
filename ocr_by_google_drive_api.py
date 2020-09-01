@@ -42,7 +42,7 @@ def main():
     http = credentials.authorize(httplib2.Http())
     service = discovery.build('drive', 'v3', http=http)
 
-    imgfile = 'Image/image2.jpg'
+    imgfile = 'Image/a.png'
 
     txtfile = 'Result.txt'
     mime = 'application/vnd.google-apps.document'
